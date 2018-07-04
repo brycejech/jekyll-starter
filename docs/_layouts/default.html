@@ -28,9 +28,9 @@
         const body = document.body,
               ftr  = body.querySelector('footer');
 
-        const ftrHeight = getComputedStyle(ftr).height;
-        
-        body.style['padding-bottom'] = ftrHeight
+        const ftrHeight = parseInt(getComputedStyle(ftr).height);
+
+        body.style['padding-bottom'] = (ftrHeight + 25) + 'px';
     })();
     </script>
 
